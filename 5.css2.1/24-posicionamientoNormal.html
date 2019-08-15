@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posicionamiento Normal</title>
+</head>
+<style>
+main{
+        
+    margin: 0px auto;
+    width: 960px;
+    padding: 5px;
+}
+main section{
+border: 1px solid #555;
+padding: 10px;
+width: 448px;
+display: inline-block;
+vertical-align: top;
+}
+main section.block{
+ margin-left: 16px;   
+}
+main section.block div{
+border:1px solid #555;
+padding: 20px;
+margin: 5px 0px;
+}
+main section.inline div{
+    border: 1px dashed#999;
+    padding: 20px 0px;
+    margin: 5px 0px;
+}
+main section.inline div a{
+    border:1px solid #555;
+    padding: 10px;
+}
+
+</style>
+<body>
+    
+</body>
+<h1>Posicionamiento (Normal/Estatico)</h1>
+<main>
+    <section class="block">  
+        <h4>Elementos de bloque</h4>
+        <div>elemento de bloque</div>
+        <div>elemento de bloque</div>
+        <div>elemento de bloque</div>
+    </section>
+  
+    <section class="inline">
+        <h4>elementos de linea</h4>
+        <div>
+        <a href="">Google</a>
+        <a href="">Yahoo</a>
+    </div>
+    <div></div>
+    </section>
+</main>
+
+</html>

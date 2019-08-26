@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Texto interlineado</title>
+</head>
+<style>
+section.lineheight{
+    border: 1px solid #aaa;
+    margin: 10px auto;
+    width: 620px;
+}
+section.lineheight div{
+    border: 1px solid blue;
+    display: inline-block;
+    width: 150px;
+}
+section.lineheight div.lh1{line-height: 0.5em;}
+section.lineheight div.lh2{line-height: 1em;}
+section.lineheight div.lh3{line-height: 1.5em;}
+
+</style>
+<body>
+    <main>
+        <h1>Texto interlineado</h1>
+        <section class="lineheight">
+            <div class="lh1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, dignissimos?</div>
+            <div class="lh2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, dignissimos?</div>
+            <div class="lh3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, dignissimos?</div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Clases y Elementos</title>
+</head>
+<style>
+    body{
+        font:16px Arial;
+    }
+nav.links{
+    margin: 10px auto;
+    width: 600px;
+}
+nav.links a{
+    display: inline-block;
+    width: 125px;
+}
+nav.links a:link:first-child{
+    color: yellow;
+}
+nav.links a:link,
+nav.links a:visited{
+    background-color: #00a687;
+    border-bottom: 10px solid #0b5244;
+    color: #0b5244;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+nav.links a:hover{
+    background-color: #0b5244;
+    border-bottom: 1px solid #00a687;
+    color: #00a687
+}
+nav.links a:active{
+    background-color: red;
+    border-bottom: 1px solid red;
+    color: red
+}
+input.input{
+    border: 1px solid #00a687;
+    outline: none;
+    padding: 10px;
+}
+input.input:focus{
+    background-color: #00a687;
+    border: 1px solid #0b5244;
+}
+p{
+    margin: 10px auto;
+    padding: 10px;
+    width: 600px;
+}
+p::first-letter{
+    background-color: #00a687;
+    font-size: 5em;
+}
+div.box{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+}
+div.box:before{
+    background-color:yellow;
+    content: "";
+    height: 200px;
+    position: absolute;
+    left: -10px;
+    width: 200px;
+}
+div.box:after{
+    background-color:green;
+    content: "";
+    height: 200px;
+    position: absolute;
+    left: -10px;
+    width: 200px;
+}
+</style>
+<body>
+    <h1>Pseudo Clases/Elementos</h1>
+    <h4>Enlaces (Link, Visited, Activee, Hover)(First child)</h4>
+    <nav class="links">
+        <a href="javascript:;">HOME</a>
+        <a href="javascript:;">ABOUT</a>
+        <a href="javascript:;">SERVICES</a>
+        <a href="javascript:;">CONTACT</a>
+    </nav>
+    <h4>Elemento de entrada de formulario</h4>
+    <input type="text" class="input" placeholder="Correo Electronico">
+    <h4>Primera letra y primera linea</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magnam? 
+        Illo dolore corporis iure, recusandae modi deleniti. Iste non a laudantium 
+        et blanditiis aliquam laborum aperiam asperiores quae, autem delectus.</p>
+        <h4>
+            Antes/Despues
+        </h4>
+        <div class="box"></div>
+</body>
+</html>

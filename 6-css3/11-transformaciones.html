@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tranformaciones</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+    div.box{
+    background: url(imgs/rafael.jpg) no-repeat center;
+    background-size: contain;
+    height: 280px;
+    margin: 20px auto;
+    width: 180px;
+    }
+    div.box1{transform: translate(-200px, 20px);}
+    div.box2{transform: rotate(90 deg);}
+    div.box3{transform: scale(0.5);}
+    div.box4{transform: skew(25deg);
+        box-shadow: 0px 0px 5px 0px #333;}
+    div.box5{transform: rotate(60 deg) scale(1.5) skew(25deg);}
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Tranformaciones</h1>
+        </header>
+        <section>
+            <h3>translate(-200px, 20px)</h3>
+            <div class="box box1"></div>
+            <h3>rotate(90 deg)</h3>
+            <div class="box box2"></div>
+            <h3>scale(0.5)</h3>
+            <div class="box box3"></div>
+            <h3>skew(25 deg)</h3>
+            <div class="box box4"></div>
+            <h3>rotate() scale() skew()</h3>
+            <div class="box box5"></div>
+        </section>
+    </main>
+</body>
+</html>

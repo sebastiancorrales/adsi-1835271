@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="css/master.css ">
+    <style>
+    section{
+        background: url(imgs/garden.jpg) no-repeat;
+        background-size: cover;
+        height: 480px;
+        width: 800px;
+        margin: 20px auto;
+    }
+    div.avion{
+        background:url(imgs/avion.png);
+        background-size: cover;
+        height: 80px;
+        position: relative;
+        width: 120px;
+        animation: anivion 20s ease-in-out;
+    }
+    @keyframes anivion{
+    0%,100%
+    {
+        left: 300px;
+        top: 0px;
+        transform:scale(0.0);
+    }
+    25%
+    {
+        left: 400px;
+        top: 50px;
+        transform:scale(0.5);
+    }
+    50%{
+        left: 500px;
+        top: 100px;
+        transform:scale(1);
+    }
+    75%
+    {
+        left: 600px;
+        top: 150;
+        transform: scale(1.5);
+    }
+    100%
+    {
+        left: 700px;
+        top: 200px;
+        transform: scale(2);
+    }
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Animaciones</h1>
+        </header>
+        <section>
+            <div class="avion"></div>
+        </section>
+    </main>
+</body>
+</html>

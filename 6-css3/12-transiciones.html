@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transiciones</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        div.box{
+            border: 2px solid #333;
+            width: 200px;
+            height: 300px;
+            margin: 20px auto;
+        }
+        div.box.box1{
+            background-color:crimson;
+            transition: all .1s ease-in;
+        }
+        div.box1:hover{
+            background-color:blue;
+            width: 400px;
+            height: 200px;
+            transform: scale(2);
+        }
+        div.box.box2{
+            background-color:#456321;
+            transition: all 60s ease-in-out;    
+        }
+        div.box2:hover{
+            background-color: #333;
+            transform: rotate(100080deg);
+        }
+        div.box.box3{
+            background-color: orange;
+            transition: all 1s linear;
+        }
+        div.box3:hover{
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        div.box.box4{
+            background-color: #567672;
+            transition: all 1s ease-in-out;
+        }
+        div.box4:hover{
+            transform: translateX(200px),
+                       translateY(200px);            
+
+        }
+        div.box.box5{
+            background-color: #098762;
+            transition: width 1s,
+                        height 1s 1s, 
+                        background 1s 2s;
+        }
+        div.box.box5:hover{
+            background-color: MidnightBlue;
+            width: 400px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Transiciones</h1>
+        </header>
+        <section>
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+        </section>
+    </main>
+</body>
+</html>

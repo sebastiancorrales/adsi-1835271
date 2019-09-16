@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos selectores</title>
+	<link rel="stylesheet" href="css/master.css">
+	<style>
+		/* li:first-of-type */
+
+		ul.planguages li:first-of-type {
+			background-color: #000;
+			color: #fff ;
+		}
+		ul.frontend li:last-of-type {
+			background-color: #000;
+			color: #fff;
+		}
+		/*li:nth-chil(3)*/
+		ul.databases li:nth-child(3) {
+			background-color: rgb(5, 5, 5);
+			color: rgb(248, 248, 248);
+		}
+
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Nuevos Selectores</h1>
+		</header>
+		<section>
+			<h3>:first-of-type(seleccione el primer elemento de tipo li)</h3>
+			<ul class="planguages">
+				<li>Python</li>
+				<li>Python</li>
+				<li>PHP</li>
+			</ul>
+			<h3>li:last-of-type(seleccione el ultimo elemento de tipo li)</h3>
+			<ul class="frontend">
+				<li>html</li>
+				<li>css</li>
+				<li>js</li>
+			</ul>
+
+			<h3>li:nth-child(n)(Selecciona el elemento numero n)</h3>
+			<ul class="databases">
+				<li>MySQL</li>
+				<li>Maria DB</li>
+				<li>Postgres</li>
+				<li>SQL Server</li>
+				<li>Oracle</li>
+	
+
+			</ul>
+			<h3>section#home:target (Selecciona el ancla activa)</h3>
+			<nav>
+				<a href="#home">Home</a>
+				<a href="#services">Services</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</section>
+	</main>
+</body>
+</html>

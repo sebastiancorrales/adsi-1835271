@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+    main{
+    width: 1024px;
+    }
+    div.parallax{
+       height: 576px;
+       width: 1024px;
+       border: 2px solid #1d4e6f;
+    }
+    div.layer8{
+        background: url(imgs/layer_08.png);
+        height: 576px;
+        width: 1024px;
+    }
+    div.layer7{
+        background: url(imgs/layer_07.png)repeat-x;
+        height: 576px;
+        width: 1024px;
+        margin-top:-576px;
+        animation: aniLayer7 70s linear infinite;
+    }
+    div.layer6{
+        background: url(imgs/layer_06.png)repeat-x;
+        height: 576px;
+        width: 1024px;
+        margin-top:-576px;
+        animation: aniLayer6 60s linear infinite;
+    }
+    div.layer5{
+        background: url(imgs/layer_05.png)repeat-x;
+        height: 576px;
+        width: 1024px;
+        margin-top:-576px;
+        animation: aniLayer5 50s linear infinite;
+    }
+    div.layer4{
+        background: url(imgs/layer_04.png)repeat-x;
+        height: 576px;
+        width: 1024px;
+        margin-top:-576px;
+        animation: aniLayer4 40s linear infinite;
+    }
+    div.layer3{
+        background: url(imgs/layer_03.png)repeat-x;
+        height: 576px;
+        width: 1024px;
+        margin-top:-576px;
+        animation: aniLayer3 30s linear infinite;
+    }
+    div.layer2{
+        background: url(imgs/layer_02.png)repeat-x;
+        height: 576px;
+        width: 1024px;
+        margin-top:-576px;
+        animation: aniLayer2 20s linear infinite;  
+    }
+    div.layer1{
+        background: url(imgs/layer_01.png)repeat-x;
+        height: 576px;
+        width: 1024px;
+        margin-top:-576px;
+        animation: aniLayer1 10s linear infinite;
+    }
+    div.layer0{
+        
+        background: url(imgs/sonicgif.gif) repeat-x;
+        height: 150px;
+        width: 140px;
+        background-size: contain;
+        margin-top: -265px;
+        transition: all 0.4s ease-in-out;
+    }
+    div.layer0:hover{
+      transform: translateY(-100px);
+    }
+    @keyframes aniLayer7{100%{background-position: -2048px;}}
+    @keyframes aniLayer6{100%{background-position: -2048px;}}
+    @keyframes aniLayer5{100%{background-position: -2048px;}}
+    @keyframes aniLayer4{100%{background-position: -2048px;}}
+    @keyframes aniLayer3{100%{background-position: -2048px;}}
+    @keyframes aniLayer2{100%{background-position: -2048px;}}
+    @keyframes aniLayer1{100%{background-position: -2048px;}}
+    
+    
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Parallax</h1>
+        </header>
+        <section>
+            <div class="parallax">
+                <div class="layer8"></div>
+                <div class="layer7"></div>
+                <div class="layer6"></div>
+                <div class="layer5"></div>
+                <div class="layer4"></div>
+                <div class="layer3"></div>
+                <div class="layer2"></div>
+                <div class="layer1"></div>
+                <div class="layer0"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
